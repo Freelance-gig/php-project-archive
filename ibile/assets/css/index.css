@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Jua&display=swap');
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    overflow-x: scroll;
+}
+ul,
+ol,
+body,
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture , hr{
+    padding: 0;
+    margin: 0;
+}
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+input, 
+button,
+textarea,
+select {
+    font: inherit;
+    outline: none;
+    border: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before 
+    *::after{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+}
+/* UTILITY CSS */
+
+:root {
+    /* colors */
+    --clr-light: #d3d3d3;
+    --clr-dark: #140b05;
+    --clr-primary: #ebfa69;
+    --clr-secondary: #ff8c67;
+    --clr-white: #fff;
+  
+    /* fonts */
+    --ff-montserat: "Montserrat", sans-serif;
+    --ff-inter: "Inter", sans-serif;
+    --ff-jua: "Jua", sans-serif;
+    --gap: 1rem;
+}
+.text-light { color: var(--clr-light); }
+.text-secondary { color: var(--clr-secondary); }
+.text-primary { color: var(--clr-primary); }
+.text-white { color: var(--clr-white);}
+.bg-dark { background-color: var(--clr-dark); }
+.bg-primary { background-color: var(--clr-primary); }
+.bg-white { background-color: var(--clr-white); }
+
+.ff-jua { font-family: var(--ff-jua); }
+.ff-montserat { font-family: var(--ff-montserat); }
+.ff-inter { font-family: var(--ff-inter); }
+.container > * {
+    max-width: 85%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.flow > *:where(:not(:first-child)) {
+margin-top: var(--flow-space, 1rem);
+}
+.mg-1 {
+    margin-block: 1rem;
+} 
+.mg-2 {
+    margin-block: 2rem;
+} 
+.mg-4 {
+    margin-top: 4rem;
+} 
+.underline {
+    text-decoration: underline;
+}
+.bold {
+    font-weight: bold;
+}
+.pd-2 {
+    padding-block: 2rem;
+}
+
+/* COMPONENT CSS */
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--clr-dark);
+
+}
+.container > * {
+    max-width: 85%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.gap {
+    gap: 1rem
+}
+.flow > *:where(:not(:first-child)) {
+margin-top: var(--flow-space, 1rem);
+}
+.mg-1 {
+    margin-block: 1rem;
+  }
+  
+.mg-2 {
+    margin-block: 2rem;
+}
+/* src- https://codepen.io/t_afif/pen/abKyJNJ */
+/* buttons */
+.btn-close,
+.btn-menu {
+  margin: 2rem 0 0 2rem;
+  cursor: pointer;
+}
+.btn-close {
+    position: absolute;
+    left: 2%;
+}
+.btn-icon {
+    width: 24px;
+    height: 24px;
+}
+.btn {
+    padding: 0.5rem;
+    box-shadow: 0 0 0 .1em inset var(--clr-secondary);
+    --lg: linear-gradient(var(--clr-secondary) 0 0) no-repeat;
+    background: 
+    var(--lg) calc(var(--_p,0%) - 100%) 0%,
+    var(--lg) calc(200% - var(--_p,0%)) 0%,
+    var(--lg) calc(var(--_p,0%) - 100%) 100%,
+    var(--lg) calc(200% - var(--_p,0%)) 100%; 
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+}
+.btn:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+    color: var(--clr-white);
+    cursor: pointer;
+  }
+.btn:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--clr-secondary);
+    color: var(--clr-white);
+}
+/* links */
+.link {
+    color: var(--clr-dark);
+}
+.link:hover,
+.link:active {
+    color: var(--clr-primary);
+}
+
+/* MAIN CSS - MOBILE VIEW */
+.header {
+    height: 64vh;
+    background-image: url("../imgs/africa-cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 2rem;
+} 
+.header-span {
+    font-weight: normal;
+}
+.header-title {
+    font-size: 5rem;
+    font-weight: bolder;
+}
+.menu {
+    display: none;
+    height: 100vh;
+    align-items: center;
+    gap: var(--gap);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    max-width: 100%;
+    flex-direction: column;
+}
+.visible {
+    display: flex;
+}
+.menu .logo {
+    margin-top: 5rem;
+}
+.navbar {
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+gap: 3rem;
+}
+.nav {
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Main Section */
+.main-title {
+    text-align: center;
+}
+
+.recipe-container {
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 4rem;
+    justify-content: center;
+}
+.recipe-img {
+    width: 80%;
+    height: 40vh;
+}
+
+/* Footer Section */
+.footer {
+    /* max-width: 80%;
+    margin:  0 auto; */
+    justify-content: center;
+    padding-block: 2rem ;
+    background-color: var(--clr-primary);
+    color: #fff;
+    gap: 1rem;
+    height: 30vh;
+}
+/* Auth Page */
+.auth-wrapper {
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+.tab-container {
+    padding: 1rem;
+}
+.tab-nav {
+    padding: 2rem;
+    gap: 2rem;
+}
+.content {
+    display: none;
+}
+.auth-form {
+    display: grid;
+    gap: 0.5rem;
+}
+.sign-up {
+    grid-template-columns: 1fr 1fr;
+}
+.sign-up-btn {
+    grid-column: span 2 / span 2;
+}
+.input {
+    height: 2.5rem;
+    padding-inline: 1rem;
+    border: 1px solid;
+}
+
+/* Recipe Detail Section*/ 
+.recipe-detail {
+    justify-items: center;
+}
+
+.recipe-detail-image {
+    position: relative;
+    width: 60%;
+    object-fit: contain;
+}
+.navicon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 2rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.navicon.left {
+    left: 2rem;
+}
+
+.navicon.right {
+ right: 2rem;
+}
+
+.image-slider {
+    height: 30vh;
+}
+.image-slider img {
+    display: none;
+    height: 100%;
+}
+
+.image-slider img.active {
+    display: inline-block;
+}
+
+.recipe-detail-info {
+    gap: 0.6rem;
+}
+.recipe-detail-info h2 {
+    font-size: 40px;
+}
+.recipe-cat {
+    font-size: 13px;
+    border: 1px solid var(--clr-primary);
+    padding: 2.5px 5px;
+    width: fit-content;
+    height: fit-content;
+}
+.recipe-time {
+    font-size: 14px;
+    gap: 2rem;
+}
+.recipe-time .time {
+    font-weight: 500;
+    font-family: var(--ff-jua);
+}
+.recipe-nutrition div {
+    gap: 1rem;
+    
+}
+.recipe-nutrition div .grid {
+    background-color: #ebfa69;
+    justify-items: center;
+    padding: 5px;
+    color: #140b05;
+}
+
+.recipe-nutrition div .grid .name {
+    background-color: #ff8c67;
+    color: #fff;
+    padding: 5px;
+}
+/* Recipe List Secion */
+.search-input {
+    width: 50%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    background-color: rgb(223, 223, 223);
+    display: inline-block;
+}
+
+.search-container {
+    display: flex;
+}
+.food-category {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.food-category span {
+    padding: 1rem 2rem;
+    background-color: #ebfa69;
+}
+/* Add Recipe Modal */
+.add-recipe-form {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+.add-recipe-form .description {
+    grid-column: span 2 / span 2;
+}
+.add-recipe-form .name {
+    grid-column: span 2 / span 2;
+}
+.add-recipe-form .nutrients {
+    grid-column: span 2 / span 2; 
+}
+/* MAIN CSS - DESKTOP VIEW */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+    }
+    .btn-menu,
+    .btn-close {
+      display: none !important;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: static;
+        background-color: var(--clr-white);
+        width: 100%;
+        max-width: 100%;
+        padding-inline: 8%;
+        height: 15vh;
+        box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    }
+    .menu .logo {
+        margin-top: 0;
+    }
+    .nav {
+        flex-direction: row;
+        gap: 3rem;
+    } 
+    /* Recipe Detail Section */
+    .recipe-detail {
+        grid-template-areas:
+                            "recipe-detail-image  recipe-detail-info"
+                            "recipe-detail-image  recipe-nutrition"
+                            "recipe-ingridient recipe-instuctions";
+    } 
+}
+  

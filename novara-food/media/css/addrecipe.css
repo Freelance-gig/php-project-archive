@@ -1,0 +1,10 @@
+.form-container {
+    max-width: 80%;
+    margin: 0 auto
+}
+
+.recipeform-container {
+    display: grid;
+    width: 500px;
+    gap: 0.6rem;      
+}

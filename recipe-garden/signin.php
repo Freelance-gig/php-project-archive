@@ -1,0 +1,76 @@
+<?php 
+    session_start();
+    if (isset($_SESSION['id'])) {
+      header('Location: index.php');
+      exit();
+    }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/input.css">
+    <link rel="stylesheet" href="./static/output.css">
+    <title>Sigin to Manage your Recipes </title>
+</head>
+<body>
+    <section class="bg-[#ececec] py-[20px]">
+        <div class="container mx-auto flex justify-center items-center h-[100vh]">
+            <div class="row w-[90%] md:w-[900px] h-[550px] bg-white shadow-md rounded-md">
+                <div class="
+                col-md-6
+                bg-[url('./images/login.jpg')]
+                bg-center
+                bg-no-repeat
+                bg-cover
+                rounded
+                ">
+                
+                </div>
+                <div class="col-md-6 flex flex-col justify-between items-center relative">
+                    <a href="./index.php"> <button class="self-start"> Back home </button></a>
+                        <div> You Don't have an account ? Click <a href="./register.php"> Here </a></div>
+                    <div class="flex  w-full justify-center items-center relative">
+                        <div class="w-full">
+                            <h2 class="font-extrabold text-center mb-[3rem]"> Login </h2>
+                            <div class="flex flex-col relative py-[1rem]">
+                    
+                                <label class="absolute peer-focus:top[-10px] peer-focus:font-[13px] top-[10px] left-[10px] pointer-events-none duration-75" for="email"> Email </label>
+                                <input type="email" class="h-[45px] w-full
+                                bg-transparent  border-b-2 
+                                border-[rgba(0,0,0,0.2)] outline-none
+                                text-[#40414a]
+                                peer
+                                " id="email" autocomplete="off" required/>
+                                <p class="mt-2 invisible peer-invalid:visible  text-pink-600 text-sm">
+                                    Please provide a valid email address.
+                                </p>
+
+                              
+                            </div>
+                            <div class="flex flex-col relative py-[1rem]">
+                    
+                                <label class="absolute peer-focus:top[-10px] peer-focus:font-[13px] top-[10px] left-[10px] pointer-events-none duration-75" for="password"> Password </label>
+                                <input type="password" class="h-[45px] w-full
+                                bg-transparent  border-b-2 
+                                border-[rgba(0,0,0,0.2)] outline-none
+                                text-[#40414a]
+                                peer
+                                " id="password" autocomplete="off" required/>
+                                <p class="mt-2 invisible peer-invalid:visible  text-pink-600 text-sm">
+                                    Please provide a password.
+                                </p>
+                                <button id="login-btn" class="rounded-full border px-4 py-2" > Login </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./server-side/api/v1/scripts/login.js"> </script>
+</html>

@@ -1,0 +1,85 @@
+body { 
+    padding-top: 78px; 
+}
+main {
+    padding: 0 100px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>>>>>>>>>> */
+.navbar {
+	padding:20px !important;
+    padding: 20px !important;
+    border-bottom: 2px solid #ccc;
+}
+
+#nav-ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.hero-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the columns */
+    align-items: center; /* Center items vertically */
+    padding: 100PX 200px ;
+}
+
+.hero-column {
+    flex: 1; /* Each column takes up an equal portion of available space */
+    padding: 20px;
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<< FREQUENTLY ASKED QUESTION >>>>>>>>>>>>>>>>>>>>>> */
+#faq {
+ /* margin: 150px 0; */
+ padding: 150px 140px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.question {
+    cursor: pointer;
+    /* background-color: #f4f4f4; */
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #f4f4f4;
+    position: relative;
+}
+
+.answer {
+    display: none;
+    padding: 12px;
+    /* border: 1px solid #ccc;
+    border-radius: 5px; */
+    background-color: #fff;
+}
+
+.question .dropdown-icon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>> */
+#footer {
+    position: relative;
+    bottom: 0;
+  }
+#soc-media {
+    margin-bottom: 15px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<< LIST OF RECIPES >>>>>>>>>>>>>>>>>>>>>>>> */
+#recipe-cards {
+    padding-top: 50px
+}
+
+#recipe-cards h3 {
+    text-align:center;
+}

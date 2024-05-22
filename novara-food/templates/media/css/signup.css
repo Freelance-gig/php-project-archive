@@ -1,0 +1,68 @@
+.bg-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgba(239, 246, 255, 1)
+}
+
+.auth-container {
+    max-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-inline: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: white;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0 0 #0000,  0 0 #0000, 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.auth-nav {
+    margin-top: 1.5rem;
+}
+
+.form-header {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 32px;   
+}
+
+.input {
+    font-weight: 300;
+    padding: 11.84px;
+    border: 1px solid;
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-button {
+    text-align: center;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    border-radius: .25rem;
+    width: 100%;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+
+.form-terms {
+    text-align: center;
+    
+}

@@ -1,0 +1,95 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+a {
+  text-decoration: none;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.lexend-deca {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.primary-color {
+    color: #92D147;
+}
+.primary-color-bg {
+  background-color: #92D147;
+}
+.first-color {
+  color: #FFD29D;
+}
+.first-color-bg {
+  background-color: #FFD29D;
+}
+.second-color {
+  color: #D8C4E8;
+}
+.second-color-bg{
+  background-color: #D8C4E8;
+}
+.third-color {
+  color: #D4F2C8;
+}
+.third-color-bg {
+  background-color: #D4F2C8;
+}
+.fourth-color {
+  color: #F6E992;
+}
+.fourth-color-bg {
+  background-color: #F6E992;
+}
+.button {
+  width: fit-content;
+  background-color: #92D147;
+  padding: 13px 25px;
+  border: 0;
+  color: white;
+}
+
+header section nav {
+  z-index: 99;
+}
+
+.header-text {
+  font-size: 3rem;
+}
+a, a:hover {
+  text-decoration: none;
+  color: #000;
+}
+a:active {
+  color: #000;
+}
+li {
+  list-style: none;
+}
+.auth-container {
+  padding: 10vh;
+}

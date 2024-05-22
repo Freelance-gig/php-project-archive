@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="./static/input.css">
+    <link rel="stylesheet" href="./static/output.css">
+
+    <title>Recipe Garden | offering a venue for users to discover recipes</title>
+</head>
+<body class="inter-font">
+    <header class="w-[80%] text-center items-center container mx-auto flex justify-between p-8">
+        <a href="./index.html">
+            <span class="inter-noto">
+                Recipe Garden
+            </span>
+        </a>
+   
+        <ul class="hidden  md:flex gap-3">
+            <!-- <li> About Us</li> -->
+            <li> <a href="index.html#contact-us"> Contact Us </a></li>
+
+        </ul>
+        <div class="flex gap-4 justify-between items-center">
+            <div class="flex gap-2 bg-gray-200 p-4 rounded-full items-center">
+                <span class="material-symbols-outlined"> 
+                    search
+                </span>
+                <input type="text" class="bg-gray-200 h-[29px]"/>
+            </div>
+        
+            <a href="./user-profile.html">
+                <span class="material-symbols-outlined">
+                account_circle
+                </span>
+            </a>
+            <span class="material-symbols-outlined md:hidden">
+                menu
+            </span>
+        </div>
+    </header>
+    <main class="container mx-auto grid justify-items-center md:grid-cols-3">
+        <section class="md:col-span-1">
+            <div>
+                <fieldset>
+                    <legend>Recipe Collections </legend>
+                  
+                    <div>
+                      <input type="checkbox" id="launch" name="launch" checked />
+                      <label for="launch">Launch</label>
+                    </div>
+                  
+                    <div>
+                      <input type="checkbox" id="dinner" name="dinner" />
+                      <label for="dinner">Dinner</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="breakfast" name="breakfast" />
+                        <label for="breakfast">BreakFast</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="desert" name="desert" />
+                        <label for="desert">Desert</label>
+                      </div>
+                  </fieldset>
+            </div>
+        </section>
+        <section class="md:col-span-2 flex flex-wrap gap-4"> 
+            <div class="text-center space-y-2">
+                <img alt="Dinner" src="./static/images/desert.jpg" class="w-[80%] h-[30vh] rounded-md"/>
+                <span> Desert </span>
+                <h3 class="text-center font-bold inter-noto"> Blueberry-Lemon Breakfast Cake </h3>
+                <a href="./recipe-detail.html"><button class="rounded-full border px-4 py-2" > View Recipe </button></a>
+            </div>
+            <div class="text-center space-y-2">
+                <img alt="Dinner" src="./static/images/desert.jpg" class="w-[80%] h-[30vh] rounded-md"/>
+                <span> Desert </span>
+                <h3 class="text-center font-bold inter-noto"> Whole Lemon Blender Cake </h3>
+                <a href="./recipe-detail.html"><button class="rounded-full border px-4 py-2" > View Recipe </button></a>
+                
+            </div>
+            <div class="text-center space-y-2">
+                <img alt="Dinner" src="./static/images/desert.jpg" class="w-[80%] h-[30vh] rounded-md"/>
+                <span> Desert </span>
+                <h3 class="text-center font-bold inter-noto"> Cinnamon Toast Crunch Apple Dump Cake </h3>
+                <a href="./recipe-detail.html"><button class="rounded-full border px-4 py-2" > View Recipe </button></a>
+            </div>
+            <div class="text-center space-y-2">
+                <img alt="Dinner" src="./static/images/desert.jpg" class="w-[80%] h-[30vh] rounded-md"/>
+                <span> Desert </span>
+    
+                <h3 class="text-center font-bold inter-noto"> Cinnamon Toast Crunch Apple Dump Cake </h3>
+                <a href="./recipe-detail.html"><button class="rounded-full border px-4 py-2" > View Recipe </button></a>
+
+            </div>  
+        </section>
+    </main>
+    <footer class="bg-slate-400 w-full mt-10 h-[30vh]">
+        <div class="container mx-auto max-w-[80%]  space-y-6">
+
+            <div class="pt-4 flex justify-between font-bold">
+                <a href="">FAQs</a>
+                <a href="./index.html"> Recipe Garden </a>
+                <a href="./index.html#contact-us">Contact us</a>
+            </div>
+            <div class=" border p-6 flex justify-between items-center">
+                <div class="flex gap-4">
+                    <img src="./static/images/facebook.png" />
+                    <img src="./static/images/mail.png" />
+                    <img src="./static/images/twitter.png" />
+                </div>
+                <span>
+                    Copyright 2024 Idris
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="./static/script.js"> </script>
+</body>
+</html>
