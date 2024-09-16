@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <title>Home Page</title>
+</head>
+<body class="ff-montserat flow">
+    <!--Header Section-->
+    <header class="header container">
+        <i class="fa-solid fa-bars btn-menu"></i>
+        <nav class="menu bg-white">
+            <i class="fa-solid mg-2 fa-xmark btn-close"></i>
+            <a class="logo ff-jua " href="./index.html">
+                <span class="text-dark"> IBILE </span> <span class="text-secondary">FOOD</span>
+            </a>
+            <div class="flex navbar">
+                <ul class="flex nav text-dark">
+                    <li><a class="link" id="about" href="./about.html">Blog</a></li>
+                    <li><a class="link" id="program" href="#">About</a></li>
+                    <li><a class="link" id="join" href="#">Contact Us</a></li>
+                </ul>
+                <a href="./auth.html"><button class="btn" type="button"> Sign up / Login  </button> </a>
+            </div>
+        </nav>
+        <p class="text-dark bg-light">
+            Your way to African foods   
+        </p>
+        <h1 class="mg-2">
+            <span class="text-primary header-span">
+                A place to get all African dishes <br /> from Morocco, South African, <br /> Ghana and many more
+            </span> 
+        </h1>       
+        <div class="mg-2 bg-white">
+            <div>
+                <h2 class="bold">What African Dish would you like to cook ?</h2>
+                <div>
+                        <input class="input" />            
+                        <button onclick="window.location.href='./recipes.html'"> Search </button>
+                </div>
+
+            </div>
+            <p>
+                Popular Searches
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container">
+        <h1 class="main-title"> Popular Recipes </h1>
+        <div class="grid recipe-container">
+            <div class="recipe" >
+                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
+                <span class="recipe-cat"> South African Dish </span>
+                <h3 class="recipe-name"> Bobotie </h3>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+            </div>
+            <div class="recipe" >
+                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
+                <span class="recipe-cat"> South African Dish </span>
+                <h3 class="recipe-name"> Bobotie </h3>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+            </div>
+            <div class="recipe" >
+                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
+                <span class="recipe-cat"> South African Dish </span>
+                <h3 class="recipe-name"> Bobotie </h3>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+            </div>
+            <div class="recipe" >
+                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
+                <span class="recipe-cat"> South African Dish </span>
+                <h3 class="recipe-name"> Bobotie </h3>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+            </div>
+            <div class="recipe" >
+                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
+                <span class="recipe-cat"> South African Dish </span>
+                <h3 class="recipe-name"> Bobotie </h3>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+            </div>
+            <div class="recipe" >
+                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
+                <span class="recipe-cat"> South African Dish </span>
+                <h3 class="recipe-name"> Bobotie </h3>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="flex footer ">
+        <!-- <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"> -->
+            <div class="">
+                <h2> IBILE </h2>
+                <p> Looking for a place to get African recipe. <br /> IBILIE is your stop </p>               
+            </div>
+            <div>
+                <li> <a href=""> South African Dishes</a> </li>
+                <li> <a href=""> West African Dishes</a> </li>
+                <li> <a href=""> East African Dishes</a> </li>
+                <li> <a href=""> African Main Dishes</a> </li>
+
+            </div>
+            <div>
+                <li> <a href=""> About Us</a> </li>
+                <li> <a href=""> Contact Us</a> </li>
+            </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/79a71d8460.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./assets/main.js"> </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./resources/styles/index.css">
+    <title>Recipe Detail</title>
+</head>
+<body>
+    <header>
+        <section class="shadow-sm">
+            <nav class="d-flex  justify-content-between align-items-center my-4">
+                <a href="./index.html">
+                    <img alt="ezra-log" src="./resources/images/logo.png"/>
+                </a>
+
+                <div class="dropdown">
+                    <button class="bg-transparent border-0 fw-bolder" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="me-2"> ireoulwax </span>  <img alt="dropdown-icon" src="./resources/images/arrow-square-down.png"/>
+                    </button>
+                    <ul class="dropdown-menu p-2 rounded-4" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <a class="dropdown-item p-2" href="./seekers-profile.html">
+                            <img alt="chef-icon" style="width: 24px; height: 24px;" src="./resources/images/profile-icon.png" />
+                            <span>
+                                Profile
+                            </span>
+                        </a>
+                        </li>
+                    <li>
+                        <a class="dropdown-item p-2" href="#">
+                            <img alt="seeker-icon" style="width: 24px; height: 24px;" src="./resources/images/logout-icon.png" />
+                            <span>
+                                Log Out
+                            </span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main class="container">
+    <section id="carouselExampleIndicators" class="my-5 carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <img src="./resources/images/food-image.jpg" class="d-block w-100 rounded" style="height: 80vh; object-fit: contain;" alt="food-image carousel">
+            </div>
+            <div class="carousel-item rounded">
+                <img src="./resources/images/food-image.jpg" class="d-block w-100 rounded" style="height: 80vh; object-fit: contain;" alt="food-image carousel">
+                
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+    <section>
+        <nav class="nav nav-tabs" role="tablist"> 
+            <button class="nav-link active" id="ingridients-tab" data-bs-toggle="tab" data-bs-target="#ingridients" type="button" role="tab" aria-controls="ingridients" aria-selected="true">Ingridients</button>
+            <button class="nav-link" id="instructions-tab" data-bs-toggle="tab" data-bs-target="#instructions" type="button" role="tab" aria-controls="instrictions" aria-selected="true"> Instructions </button>
+            <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="true"> Review </button>
+
+        </nav>
+        <div class="tab-content" style="height: 35vh; width: 30vw; overflow: scroll;">
+            <div role="tabpanel" aria-labelledby="ingridients-tab"  class="tab-pane active  fade show" id="ingridients">
+                <ul>
+                    <li> 1. Tomatotes</li>
+                </ul>
+            </div>
+
+            <div role="tabpanel"  aria-labelledby="instructions-tab" class="tab-pane  fade" id="instructions">
+                <ul>
+                    <li> Boil watter </li>
+                </ul>
+            </div>
+            <div role="tabpanel"  aria-labelledby="review-tab" class="tab-pane  fade" id="review">
+                <form class="d-grid gap-3 mb-3">
+                    <div class="d-grid gap-1">
+                        <label for="signupemailinput" class="form-label"> Add Review </label>
+                        <input id="signupemailinput" placeholder="name@example.com" type="email" required  class="form-control"/>
+                    </div>
+                   <button type="button" class="button rounded shadow-sm"> Add Review </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <ul> 
+            <li> 
+                <p> A good recipre </p> <span> by </span> <span> ireoulwax </span>
+            </li>
+        </ul>
+    </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
